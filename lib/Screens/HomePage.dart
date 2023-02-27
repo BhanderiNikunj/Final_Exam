@@ -53,27 +53,22 @@ class _HomeState extends State<Home> {
                       color: Colors.black12,
                       border: Border.all(color: Colors.black)
                     ),
+                    alignment: Alignment.center,
                     child: Text("Count"),
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 150,
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                        height: 200,
-                        width: double.infinity,
-                        child: Center(
-                          child: ListView.builder(
-                            itemCount: l1.length,
-                            itemBuilder: (context, index) => Text(
-                                "${no}   *   ${index + 1}   =   ${no * (index + 1)}",
-                                style: TextStyle(color: Colors.black),),
-                          ),
-                        )),
-                  ],
+                Container(
+                  height: 200,
+                  width: 130,
+                  child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (context, index) => Text(
+                        "${no}   *   ${index + 1}   =   ${no * (index + 1)}",
+                        style: TextStyle(color: Colors.black),),
+                  ),
                 ),
               ],
             ),
